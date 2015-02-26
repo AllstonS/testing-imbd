@@ -1,0 +1,76 @@
+
+  body {
+  margin: 0;
+  padding: 0;
+  background-color: 'grey';
+  color: 'blue';
+}
+
+.showCreate {
+  margin-left: 2%;
+}
+  section, aside {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  article{
+    display: inline-block;
+    width: 30%;
+    margin-left: 3%;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  img, p, h4 {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+  }
+
+  .ptext {
+    height: 100px;
+    overflow: scroll;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  img{
+
+  }
+
+  p, h1, h2, h4 {
+    font-family: Arial, sans-serif;
+  }
+  h4 {
+    text-align: center;
+  }
+  h1, h2, p{
+    text-align: center;
+  }
+
+  h2 {
+    padding-top: 25px;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  #createMovie {
+    width: 30%;
+    margin-left: 2%;
+    float: right;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .submit-edit {
+    display: none;
+  }

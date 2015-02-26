@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <title>Mini Imbd</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.scss">
+
+  <script type="text/template" id="movieTmpl">
+
+    <h2><%= title %></h2>
+    <img src='<%= image %>'>
+    <h4><%=release date %></h4>
+    <p class="ptext"><%= synopsis % ></p>
+<!--     <button class"deleteMovie">Delete</button>
+<button class="editMovie">Edit</button>
+ -->
+    <form id="update-movie" action="">
+      <p><input type="text" name="editTitle" value="<%= title %>" placeholder="Title"></p>
+      <p><input type="text" name="editImage" value="<%= image %>" placeholder="Image Url"></p>
+      <p><textarea type="text" name="editSynopsis" value="<%= synopsis %>" placeholder="Content" id="" cols="30" rows="10"><%= synopsis %></textarea></p>
+      <p><input type="text" name="editReleaseDate" value="<%= date %>" placeholder="Date"></p>
+    </form>
+
+    <button class="delete-movie">Delete Movie</button>
+    <button class="edit-movie">Edit Movie</button>
+    <button class="submit-movie">Submit Movie</button>
+  </script>
+</head>
+
+<body>
+  <!--our anchor for our application-->
+  <header>
+    <h1>Our Favorite Movies</h1><button class="showCreate">Add Post</button>
+  </header>
+  <section>
+    <form action="" id="createMovie">
+      <h2>Add New Movie</h2>
+      <p>
+        <label for="title"></label>
+        <input type="text" name="newTitle" placeholder="Title of movie">
+      <p>
+        <label for="image"></label>
+        <input type="text" name="newImage" placeholder="Movie Poster URL">
+      </p>
+      <p>
+        <label for="synopsis"></label>
+        <textarea id="synopsis" cols="30" rows="10" name="newSynopsis" placeholder="Movie synopsis"></textarea>
+      </p>
+      <p>
+        <label for="date"></label>
+        <input type="text" name="newDate" placeholder="Release Date">
+      </p>
+      <p>
+        <h4><button type="submit">Submit Movie</button></h4>
+      </p>
+    </form>
+  </section>
+
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../node_modules/underscore/underscore.js"></script>
+  <script src="../node_modules/backbone/backbone.js"></script>
+
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+
+    <!-- app files -->
+    <script src="model.js"></script>
+    <script src="collections.js"></script>
+    <script src="view.js"></script>
+    <script src="main.js"></script>
+  </body>
+  </html>
